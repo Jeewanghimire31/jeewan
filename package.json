@@ -1,0 +1,45 @@
+{
+  "name": "jeewan",
+  "version": "0.0.1",
+  "description": "A personal card for jeewan Ghimire(@jeewanghimire)",
+  "main": "/bin/card.js",
+  "bin": {
+    "jeewan": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeewanghimire31/jeewan.git"
+  },
+  "homepage": "https://jeewanghimire.com.np",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Jeewan Ghimire",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/jeewanghimire31/jeewan/issues"
+  },
+  "dependencies": {
+    "jeewan": "^0.0.1"
+  }
+}
